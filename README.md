@@ -6,6 +6,7 @@ This repository contains four Fortran implementations of the same three-dimensio
 
 ```text
 HPC-OpenMP-Project/
+├── HPC_Project.pdf             # Project Report
 ├── input/input.dat             # Number of samples (one positive integer)
 ├── output/                     # Program result files (.dat)
 ├── output-job/                 # Destination for SLURM logs
