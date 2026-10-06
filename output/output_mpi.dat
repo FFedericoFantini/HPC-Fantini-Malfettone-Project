@@ -1,0 +1,7 @@
+Implementation = MPI
+Input file     = input/input.dat
+Output file    = output/output_mpi.dat
+Samples        = 100000000
+MPI processes  = 20
+Estimate       =   4.1653176725432828E-01
+Execution time =     0.584758

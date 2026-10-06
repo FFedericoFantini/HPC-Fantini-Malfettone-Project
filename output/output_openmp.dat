@@ -1,0 +1,7 @@
+Implementation = OpenMP
+Input file     = input/input.dat
+Output file    = output/output_openmp.dat
+Samples        = 100000000
+Threads        = 20
+Estimate       =   4.1652057683950505E-01
+Execution time =     0.255757
