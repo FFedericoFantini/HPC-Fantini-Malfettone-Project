@@ -18,7 +18,7 @@ HPC-OpenMP-Project/
 ├── mc_openmp.f90               # OpenMP program
 ├── mc_mpi.f90                  # MPI program
 ├── mc_hybrid.f90               # Hybrid MPI+OpenMP program
-└── results_N_10_8.xlsx         # Recorded experimental results; not needed to run
+└── results_N_10_10.xlsx        # Recorded experimental results; not needed to run
 ```
 
 ## Shared modules and input
@@ -26,7 +26,7 @@ HPC-OpenMP-Project/
 - `mc_io.f90` reads the sample count from `input/input.dat` and rejects a missing file or a non-positive value. The programs use paths relative to the project root, so run them with the project root as the working directory.
 - `mc_rng1.f90` provides `rng_seed` and `rng_uniform`. The latter returns three coordinates for each sample. Its generator state is an `integer(int64)` marked `!$omp threadprivate`, giving each OpenMP thread its own state. The seed combines the system clock with an identifier supplied by the calling program, so separate runs are not designed to reproduce an identical sequence.
 - `mc_rng.f90` wraps Fortran's intrinsic `random_seed` and `random_number`. It is retained in the folder, but the current programs and SLURM scripts use `mc_rng1.f90` instead.
-- `input/input.dat` initially contains `100000000`. Change that value to run a different sample count.
+- `input/input.dat` initially contains `10000000000`. Change that value to run a different sample count.
 
 ## Program flow
 
