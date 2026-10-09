@@ -1,8 +1,0 @@
-Implementation = hybrid MPI+OpenMP
-Input file     = input/input.dat
-Output file    = output/output_hybrid.dat
-Samples        = 100000000
-MPI processes  = 4
-Threads/process= 5
-Estimate       =   4.1656076176898904E-01
-Execution time =     0.234514

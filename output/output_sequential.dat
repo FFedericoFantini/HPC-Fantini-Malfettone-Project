@@ -1,6 +1,0 @@
-Implementation = sequential
-Input file     = input/input.dat
-Output file    = output/output_sequential.dat
-Samples        = 100000000
-Estimate       =   4.1653152638640645E-01
-Execution time =     1.798848
