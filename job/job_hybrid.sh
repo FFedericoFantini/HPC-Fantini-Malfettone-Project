@@ -25,5 +25,5 @@ export OMP_PLACES=cores
 export OMP_PROC_BIND=close
 export I_MPI_PIN_DOMAIN=omp
 
-mpiifort -O0 -qopenmp mc_io.f90 mc_rng1.f90 mc_hybrid.f90 -o mc_hybrid
+mpiifort -qopenmp mc_io.f90 mc_rng1.f90 mc_hybrid.f90 -o mc_hybrid
 mpiexec -n "$SLURM_NTASKS" ./mc_hybrid

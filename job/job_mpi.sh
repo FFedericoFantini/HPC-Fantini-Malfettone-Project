@@ -18,5 +18,5 @@ cd "$SLURM_SUBMIT_DIR/.."
 
 mkdir -p output
 
-mpiifort -O0 mc_io.f90 mc_rng1.f90 mc_mpi.f90 -o mc_mpi
+mpiifort mc_io.f90 mc_rng1.f90 mc_mpi.f90 -o mc_mpi
 mpiexec -n "$SLURM_NTASKS" ./mc_mpi
