@@ -19,5 +19,5 @@ cd "$SLURM_SUBMIT_DIR/.."
 
 mkdir -p output
 
-mpiifort -O2 mc_io.f90 mc_rng1.f90 mc_sequential.f90 -o mc_sequential
+mpiifort -O0 mc_io.f90 mc_rng1.f90 mc_sequential.f90 -o mc_sequential
 ./mc_sequential
